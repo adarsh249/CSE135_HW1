@@ -56,6 +56,7 @@ usernames:
 - `bill`
 - `gary`
 - `grader`
+
 pass for all users: `123`
 ## Summary of changes to HTML file in DevTools after compression
 There are no changes to the HTML file. This makes sense because users should not be able to see on their end the HTML file compressed. However, under Response Headers, we can see that Content-Encoding is gzip, so we are compressing pages.
