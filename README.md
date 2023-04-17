@@ -12,8 +12,12 @@ SSH Private Key below or in id_rsa file given.
 
 ## Details of Github auto deploy setup
 ## Username/password info for logging into site
-usernames: adarsh, bill, gary, grader
-pass for all users: 123
+usernames: 
+- `adarsh` 
+- `bill`
+- `gary`
+- `grader`
+pass for all users: `123`
 ## Summary of changes to HTML file in DevTools after compression
 There are no changes to the HTML file. This makes sense because users should not be able to see on their end the HTML file compressed. However, under Response Headers, we can see that Content-Encoding is gzip, so we are compressing pages.
 ## Summary of removing 'server' header
