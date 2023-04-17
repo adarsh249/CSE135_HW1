@@ -52,7 +52,7 @@ HoufWF5oHT02mhAAAAFWJpbGx4QExBUFRPUC1CRk0wTkZJRgECAwQF
 
 ## Details of Github auto deploy setup
 
-Using `git clone`, clone the repository https://github.com/adarsh249/CSE135_HW1 onto your local machine. Then, `cd` into the directory `CSE135_HW1`. Then, run `git remote add prod ssh://root@137.184.9.28/var/repo/CSE135_HW1.git`. Now, after making a change and commiting them, you can use `git push prod main` to change both the github and the server's files. Hello! TESTING TESTING TESTING
+Using `git clone`, clone the repository https://github.com/adarsh249/CSE135_HW1 onto your local machine. Then, `cd` into the directory `CSE135_HW1`. From the file `deploy.yml`, on GitHub actions, we put in the secrets for HOST, USERNAME, PASSWORD, KEY. So now, when you make changes locally, you can commit and then use `git push` which will push to the GitHub repository. Then this will run the Github Actions script, which will copy the changed files to the remote server, hence, updating the remote server.
 
 ## Username/password info for logging into site
 usernames: 
