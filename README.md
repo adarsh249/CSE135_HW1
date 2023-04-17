@@ -80,3 +80,10 @@ SecServerSignature "CSE 135 Server"
 </IfModule>```
 
 These lines alawys set the home page's server signature and every path on the site, including error 404, to have a response header of "CSE 135 Server".
+
+## Analytics Configuration
+
+<https://matomo.cse151group111.online>
+Username: root
+Passowrd: 123
+
