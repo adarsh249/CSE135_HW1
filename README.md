@@ -8,7 +8,9 @@
 
 ## Grader password
 password: `123`
+
 SSH Private Key below or in id_rsa file given.
+
 `-----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEApRWqpXyljKEYgru1ArX7igDK2Ys+26dfY/j3xLXtSS8gFDfx6I2K
@@ -47,6 +49,7 @@ c3YW0rAYdqiEE+KZ+n9k/XsJUd8cRH5mJsYiVxf1UYe0fa1dIwAxwUrIAE0//fIaQelbK1
 6G1j6H8lyvrFITiiXo7JBW1iAmE1E6u61/wRP1Iy92tz+IbEdOr8Ff1ErYynqGTbzPNb2o
 HoufWF5oHT02mhAAAAFWJpbGx4QExBUFRPUC1CRk0wTkZJRgECAwQF
 -----END OPENSSH PRIVATE KEY-----`
+
 ## Details of Github auto deploy setup
 
 Using `git clone`, clone the repository https://github.com/adarsh249/CSE135_HW1 onto your local machine. Then, `cd` into the directory `CSE135_HW1`. Then, run `git remote add prod ssh://root@137.184.9.28/var/repo/CSE135_HW1.git`. Now, after making a change and commiting them, you can use `git push prod main` to change both the github and the server's files.
@@ -57,10 +60,15 @@ usernames:
 - `bill`
 - `gary`
 - `grader`
+
 pass for all users: `123`
+
 ## Summary of changes to HTML file in DevTools after compression
+
 There are no changes to the HTML file. This makes sense because users should not be able to see on their end the HTML file compressed. However, under Response Headers, we can see that Content-Encoding is gzip, so we are compressing pages.
+
 ## Summary of removing 'server' header
+
 In `/etc/apache2/conf-available/security.conf`, we set `ServerTokens Full` and `ServerSignature On`. Then, in `/etc/apache2/apache2.conf`, we added lines 228 to 234 below:
 
 ```<IfModule mod_headers.c>
