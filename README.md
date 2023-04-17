@@ -48,6 +48,9 @@ c3YW0rAYdqiEE+KZ+n9k/XsJUd8cRH5mJsYiVxf1UYe0fa1dIwAxwUrIAE0//fIaQelbK1
 HoufWF5oHT02mhAAAAFWJpbGx4QExBUFRPUC1CRk0wTkZJRgECAwQF
 -----END OPENSSH PRIVATE KEY-----`
 ## Details of Github auto deploy setup
+
+Using `git clone`, clone the repository https://github.com/adarsh249/CSE135_HW1 onto your local machine. Then, `cd` into the directory `CSE135_HW1`. Then, run `git remote add prod ssh://root@137.184.9.28/var/repo/CSE135_HW1.git`. Now, after making a change and commiting them, you can use `git push prod main` to change both the github and the server's files.
+
 ## Username/password info for logging into site
 usernames: 
 - `adarsh` 
