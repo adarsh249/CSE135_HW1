@@ -30,6 +30,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           source: "*"
           target: "/var/www/html/"
 
