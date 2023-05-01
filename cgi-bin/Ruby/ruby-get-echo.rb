@@ -7,7 +7,7 @@ puts '<html><head><title>GET Request Echo</title></head>'
 puts '<body><h1 align=center>GET Request Echo</h1><hr/>'
 
 # print query string
-puts '<b>Query String:</b> <code>#{ENV['QUERY_STRING']}</code><br/>'
+puts "<b>Query String:</b> <code>#{ENV['QUERY_STRING']}</code><br/>"
 
 # print formatted query string
 puts '<b>Formatted Query String:</b><br/>'
