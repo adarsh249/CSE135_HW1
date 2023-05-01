@@ -54,6 +54,8 @@ HoufWF5oHT02mhAAAAFWJpbGx4QExBUFRPUC1CRk0wTkZJRgECAwQF
 
 Using `git clone`, clone the repository https://github.com/adarsh249/CSE135_HW1 onto your local machine. Then, `cd` into the directory `CSE135_HW1`. From the file `deploy.yml`, on GitHub actions, we put in the secrets for HOST, USERNAME, PASSWORD, KEY. So now, when you make changes locally, you can commit and then use `git push` which will push to the GitHub repository. Then this will run the Github Actions script, which will copy the changed files to the remote server, hence, updating the remote server.
 
+Additionally, one can clone the repository and set the new remote with `git remote add prod ssh://root@137.184.9.28/var/repo/CSE135_HW1.git`, and use `git push prod main` to push to both GitHub and the remote server.
+
 ## Username/password info for logging into site
 usernames: 
 - `adarsh` 
@@ -71,13 +73,15 @@ There are no changes to the HTML file. This makes sense because users should not
 
 In `/etc/apache2/conf-available/security.conf`, we set `ServerTokens Full` and `ServerSignature On`. Then, in `/etc/apache2/apache2.conf`, we added lines 228 to 234 below:
 
-```<IfModule mod_headers.c>
+```
+<IfModule mod_headers.c>
 Header always set Server "CSE 135 Server"
 </IfModule>
 
 <IfModule mod_security2.c>
 SecServerSignature "CSE 135 Server"
-</IfModule>```
+</IfModule>
+```
 
 These lines alawys set the home page's server signature and every path on the site, including error 404, to have a response header of "CSE 135 Server".
 
