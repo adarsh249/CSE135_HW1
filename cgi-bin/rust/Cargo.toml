@@ -1,0 +1,49 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+
+[[bin]]
+name = "rust-hello-html-world"
+path = "src/rust-hello-html-world.rs"
+
+[[bin]]
+name = "rust-hello-json-world"
+path = "src/rust-hello-json-world.rs"
+
+[[bin]]
+name = "rust-environment"
+path = "src/rust-environment.rs"
+
+[[bin]]
+name = "rust-get-echo"
+path = "src/rust-get-echo.rs"
+
+[[bin]]
+name = "rust-post-echo"
+path = "src/rust-post-echo.rs"
+
+[[bin]]
+name = "rust-general-request-echo"
+path = "src/rust-general-request-echo.rs"
+
+[[bin]]
+name = "rust-state"
+path = "src/rust-state.rs"
+
+[[bin]]
+name = "rust-sessions-1"
+path = "src/rust-sessions-1.rs"
+
+[[bin]]
+name = "rust-sessions-2"
+path = "src/rust-sessions-2.rs"
+
+[[bin]]
+name = "rust-destroy-session"
+path = "src/rust-destroy-session.rs"
