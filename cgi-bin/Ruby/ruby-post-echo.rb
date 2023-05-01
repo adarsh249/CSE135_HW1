@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 puts 'Cache-Control: no-cache'
 puts 'Content-type: text/html'
 puts
