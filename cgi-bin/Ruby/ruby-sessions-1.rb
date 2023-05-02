@@ -22,7 +22,7 @@ puts '<html><head><title>Ruby Sessions</title></head>'
 puts '<body><h1 align=center>Ruby Sessions Page 1</h1><hr/>'
 
 # print name unless none was provided
-puts "<b>Name:</b> <code>#{name}</code><br/>" unless name.empty? else '<b>Name:</b> None'
+puts name.empty? '<b>Name:</b> None' : "<b>Name:</b> <code>#{name}</code><br/>"
 
 puts '<br/><br/>'
 puts '<a href="/cgi-bin/Ruby/ruby-sessions-2.rb">Session Page 2</a><br/>'
