@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="./dashboard.js"></script>
+    <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Your Dashboard</h1>
+    <p>Note: If you are not logged in, please <a href="../login.html">do so.</a> If you are and the grid does not load, try hard reloading or logging out and in again.</p>
+    <div class="links">
+       <p><button class="logout" onclick="window.location.href = '../logout.html';">Logout</button></p>
+
+    </div>
+    <div class="container">
+        <div id="barChart"></div>
+        <div id="pieChart"></div>
+        <div id="grid">
+            <zing-grid id="grid"
+                src="grid.php"
+                rows-per-page-options="[5, 20, 50]"
+                rows-per-page="5"
+                theme="dark"
+                column-resizable
+                column-resizable-persistent>
+                <zg-colgroup>
+                    <zg-col field="sessionID" header="User Session ID"></zg-col>
+                    <zg-col field="deviceType" header="Device Type"></zg-col>
+                    <zg-col field="networkConnection" header="Network Connection Speed"></zg-col>
+                    <zg-col field="screenDimensions" header="Screen Dimensions"></zg-col>
+                    <zg-col field="userLanguages" header="User's Languages"></zg-col>
+                </zg-colgroup> 
+            </zing-grid>
+        </div>
+    </div>
+</body>
+</html>

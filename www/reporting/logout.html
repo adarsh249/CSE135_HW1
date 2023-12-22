@@ -1,0 +1,16 @@
+<!-- a confirmation page showing your user successfully logged out -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Logged out</title>
+        <script>
+            sessionStorage.removeItem('auth-token');
+            sessionStorage.removeItem('admin-token');
+        </script>
+    </head>
+    <body>
+        <h1>You have been logged out</h1>
+        <a href="login.html">Click here to go back
+             to the login page.</a>
+    </body>
+</html>

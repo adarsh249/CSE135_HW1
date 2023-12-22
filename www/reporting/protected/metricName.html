@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./analysis1.js"></script>
+    <script src="../protection.js"></script>
+    <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script> <!-- Include ZingChart library -->
+    <title>Analysis1</title>
+    <style>
+        body {
+            background-color: #242130;
+            width: 50%;
+            text-align: left;
+            margin: auto;
+            width: 640px; 
+            padding: 30px;
+        }
+        h1, h2, h3, p {
+        color: #999999;
+        }
+        .header,
+        .Question,
+        .firstp,
+        .firstp2,
+        .secondp,
+        .thirdp,
+        .fourthp,
+        .conclusion,
+        .linkback {
+            margin: 20px auto;
+            border: 3px solid #999999;
+            padding: 10px;
+        }
+        .header {
+            text-align: center;
+        }
+        button {
+            width: 150px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #7f70ce;
+            border: none;
+            border-radius: 5px;
+        }
+        .protectedContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="protectedContent"></div>
+        <div class="header">
+            <h1>Analysis 1</h1>
+        </div>
+        <div class="Question">
+            <h2>Question:</h2>
+            <h3>Does the type of OS affect the page loading time for users under different types of network? </h3>
+        </div>
+        <div class="firstp">
+            <h2>Intro:</h2>
+            <h3>    The loading time of web pages is a crucial factor of user experience,
+                it directly affects the satisfaction and management of website users. In addition, load
+                times are incredibly important to increase accessibilty.
+                There are many factors that could impact page loading time, one of 
+                the most important ones being the user network conditions users are
+                accessing the internet from. We all know that 4G on average is much
+                    faster than 3G, but could a certain operating system be more 
+                    efficient on a type of network than another? In this context, it
+                    is important to explore whether the type of OS affects the page 
+                    loading time for users under different types of networks. </h3>
+        </div>
+        <div class="container0">
+            <zing-grid id="grid"
+                src="grid.php"
+                rows-per-page-options="[5, 20, 50]"
+                rows-per-page="5"
+                theme="dark"
+                column-resizable
+                column-resizable-persistent>
+                <zg-colgroup>
+                    <zg-col field="sessionID" header="User Session ID"></zg-col>
+                    <zg-col field="deviceType" header="Device Type"></zg-col>
+                    <zg-col field="networkConnection" header="Network Connection Speed"></zg-col>
+                    <zg-col field="screenDimensions" header="Screen Dimensions"></zg-col>
+                    <zg-col field="userLanguages" header="User's Languages"></zg-col>
+                </zg-colgroup> 
+            </zing-grid>
+        </div>
+        <div class="firstp2">
+            <h3>The above grid shows a table of raw data we obtained from user 
+                visiting our page. In this table we have their user sessionID, 
+                operating system, network type, window dimension and their accepted
+                languages. This is a good representation of where we draw our data 
+                from. However, they are not presentable to users and it is hardly 
+                compelling in such form, and that is why we perform the below
+                visualization for our analysis. However, it is important to note that 
+                this may help us learn more about a user since we would know their screen dimensions
+                and possibly their geographic representation based off their languages. We also
+                shredded the data down to include unique sessions only. These are all factors that 
+                may possibly affect load times.
+                    </h3>
+        </div>
+        <div class="container1">
+            <div id="pieChart"></div>
+        </div>
+        <div class="secondp">
+            <h3>    The above pie chart depicts the percentage of users based on their 
+                operating system, we can tell that it is spread pretty evenly between 
+                MacOS and Windows and 
+                each operating system covers a substantial amount of users. This is
+                why we need to investigate this trend as operating systems such as 
+                Windows, macOS, iOS, and Android have distinct architectures, 
+                functionalities, and optimizations that can potentially impact the
+                performance of web page loading.  </h3>
+        </div>
+        <div class="container2">
+            <div id="barChartBadExample"></div>
+        </div>
+        <div class="thirdp">
+            <h3>    The above bar graph illustrates the variation in loading time solely
+                based on the operating system. The information tells us that MacOS 
+                has the fastest loading time followed by android, and the slowest 
+                operating system was Windows. While this representation can provide
+                valuable insights and be indicative of performance disparities, it
+                is important to acknowledge the absence of network type. It is 
+                crucial to consider that not all users have access to high-speed
+                    internet connections or advanced routers. Therefore, the graph's
+                    findings may potentially be misleading, as the impact of network
+                    conditions on loading time is not accounted for, potentially 
+                    underrepresenting real-world user experiences.
+            </h3>
+        </div>
+        <div class="container3">
+            <div id="barChart"></div>
+        </div>
+        <div class="fourthp">
+            <h3>    This graph is a more accurate representation of the real world situation.
+                It is very obvious that 4G network users on average have a much faster
+                loading time than that of the 3G users. However, there are some 
+                variations among their operating systems. For example, windows are
+                slower on 3G networks while they are faster on 4G networks. Macs 
+                on the other hand are slower on 4G networks but faster on 3G 
+                networks. Android on the other hand had too little data and we failed
+                to analyze anything meaningful from it. Unfortunately, we are not 
+                able to track IOS because of technical difficulties. 
+            </h3>
+        </div>
+        <div class="conclusion">
+            <h2>Conclusion:</h2>
+            <h3>    The comprehensive evaluation of user performance is crucial for 
+                driving improvements in our website. It is essential to move beyond 
+                singular metrics such as operating system or network type and embrace
+                a more holistic approach to obtain detailed and accurate results. 
+                Given additional time to enhance the analysis, two key enhancements
+                would be considered. Firstly, incorporating data for iOS devices 
+                would provide a more complete representation of the user base. iOS has done
+                a great job disabling any sort of tracking software, even when using Chrome on an iOS
+                device. Having iOS data would better complete our metrics.
+                Secondly, introducing an additional metric to track user device 
+                performance would further mitigate potential bias arising from 
+                variations in compute power. These augmentations would significantly
+                contribute to a more robust and informative analysis, enabling 
+                us to make informed decisions and implement targeted optimizations
+                    for our website.
+            </h3>
+        </div>
+        </div>
+        
+        <div class="linkback">
+            <p><button onclick= "window.location.href = './dashboard.html';" class="back-button">Back to Dashboard</button></p>
+            <p><button onclick="window.location.href = '../logout.html';">Logout</button></p>
+        </div>
+    </div>
+</body>
+</html>

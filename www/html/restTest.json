@@ -1,0 +1,227 @@
+[
+  {
+    "id": "acd10562-27ed-4cbc-afa7-6ae62bceb2b5",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1470,
+      956
+    ],
+    "userWindowDimensions": [
+      982,
+      751
+    ],
+    "userNetworkConnectionType": "4g"
+  },
+  {
+    "id": "12352daf-bf63-4d22-aed9-37d1f473e876",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1470,
+      956
+    ],
+    "userWindowDimensions": [
+      982,
+      751
+    ],
+    "userNetworkConnectionType": "4g"
+  },
+  {
+    "id": "a34e4189-d813-4063-b2e0-a5e85db3d930",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1470,
+      956
+    ],
+    "userWindowDimensions": [
+      982,
+      751
+    ],
+    "userNetworkConnectionType": "4g"
+  },
+  {
+    "id": "09b8311b-962b-409e-8efe-9f515152f823",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1470,
+      956
+    ],
+    "userWindowDimensions": [
+      982,
+      751
+    ],
+    "userNetworkConnectionType": "4g"
+  },
+  {
+    "collection": {
+      "info": {
+        "name": "{{collectionName}}",
+        "schema": "{{collectionSchemaUrl}}"
+      },
+      "item": [
+        {
+          "request": {}
+        }
+      ]
+    },
+    "id": "1ca42012-4c91-4711-b51c-eed8774fe15a"
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1710,
+      1112
+    ],
+    "userWindowDimensions": [
+      852,
+      900
+    ],
+    "userNetworkConnectionType": "4g",
+    "id": "411"
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1710,
+      1112
+    ],
+    "userWindowDimensions": [
+      150,
+      900
+    ],
+    "userNetworkConnectionType": "4g",
+    "id": "19810fa6-0549-484b-93f9-ded22541a33f"
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1710,
+      1112
+    ],
+    "userWindowDimensions": [
+      150,
+      900
+    ],
+    "userNetworkConnectionType": "4g",
+    "id": "39dda23c-ba64-40b3-afc2-935792cf1157"
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1710,
+      1112
+    ],
+    "userWindowDimensions": [
+      150,
+      900
+    ],
+    "userNetworkConnectionType": "4g",
+    "id": "00f3de72-92ec-4533-b0ad-e50375e3ae22"
+  },
+  {
+    "id": "4111"
+  },
+  {
+    "id": "41111",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "userLanguages": [
+      "en-US",
+      "en",
+      "ko"
+    ],
+    "userPreferredLanguage": "en-US",
+    "userCookiesEnabled": true,
+    "userScreenDimensions": [
+      1710,
+      1112
+    ],
+    "userWindowDimensions": [
+      852,
+      900
+    ],
+    "userNetworkConnectionType": "4g"
+  },
+  {
+    "collection": {
+      "info": {
+        "name": "{{collectionName}}",
+        "schema": "{{collectionSchemaUrl}}"
+      },
+      "item": [
+        {
+          "request": {}
+        }
+      ]
+    },
+    "id": "411111"
+  },
+  {
+    "collection": {
+      "info": {
+        "name": "{{collectionName}}",
+        "schema": "{{collectionSchemaUrl}}"
+      },
+      "item": [
+        {
+          "request": {}
+        }
+      ]
+    },
+    "id": "4111111"
+  }
+]

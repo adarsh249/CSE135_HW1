@@ -1,0 +1,104 @@
+form.login-form {
+    display: table;
+}
+
+div.login-form {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.error {
+    color: red;
+}
+
+body {
+    background-color: #242130;
+    color: #7D798D;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    background-color: #242130;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#barChart {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+#pieChart {
+    grid-column: 4 / 5;
+    grid-row: 1;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #7f70ce;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a99be0;
+    box-shadow: 0px 0px 10px 0px #a99be0;
+    transition: 0.5s;
+}
+
+#grid {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    width: auto;
+    height: 300px;
+}
+
+zing-grid {
+    background: #2F2B3F;
+}
+
+zg-head-cell {
+    background: #242030;
+    color: #7D798D;
+    font-weight: bold; 
+    font-style: normal; 
+    text-decoration: none; 
+    font-size: 14px; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif; 
+}
+
+zg-cell {
+    color: #7D798D;
+    font-weight: bold; 
+    font-style: normal; 
+    text-decoration: none; 
+    font-size: 14px; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif; 
+}
+
+zg-watermark {
+    background: #2F2B3F;
+}

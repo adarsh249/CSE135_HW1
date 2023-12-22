@@ -1,1 +1,6 @@
-.vscode
+www/reporting/node_modules/
+apache2/sites-available/node_modules
+www/matomo
+www/html/.git_old
+www/html/node_modules
+www/html/cgi-bin/rust/target

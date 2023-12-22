@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="middleware/auth.js"></script>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <h2>Login</h2>
+
+    <div class="wrapper">
+        <header>Login Form</header>
+        
+        <form class="login-form" id="login" action="#">
+            <div class="login-form">
+                <label for="name">Username: </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="login-form">
+                <label for="username">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="login-form">
+                <input type="submit" value="Login!">
+            </div>
+        </form>
+        <div class="error" id="error-text"></div>
+        <div class="forgot-pass"><a href="./forgot.html">Forgot Password?</a></div>
+    </div>
+
+</body>
+
+</html>

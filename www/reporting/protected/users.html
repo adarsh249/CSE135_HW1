@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../protection.js"></script>
+    <script src="https://cdn.zinggrid.com/zinggrid.min.js" defer></script>
+    <!-- <script src="../crud.js" defer></script> -->
+    <title>Admin View of Users</title>
+    <!-- <style>
+        body {
+            background-color: #242130;
+            color: antiquewhite;
+        }
+
+        a {
+          border-radius: 2px solid white;
+          background-color: antiquewhite;
+        }
+
+        .zg-dialog-body-icon-row {
+            margin: 0;
+            color: white !important;
+        }
+        button {
+            width: 150px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #7f70ce;
+            border: none;
+            border-radius: 5px;
+        }
+    </style> -->
+</head>
+<body>
+    <div> 
+        <section>
+          <p><button onclick= "window.location.href = './dashboard.html';" class="back-button">Back to Dashboard</button></p>
+        </section>
+    </div>
+    <!-- <div>
+        <section>
+          <form id="registrationForm">
+            <fieldset>
+              <legend>Registration Information</legend>
+      
+              <label for="regUsername">Username:</label>
+              <input type="text" id="regUsername" name="regUsername" required>
+      
+              <label for="regEmail">Email:</label>
+              <input type="email" id="regEmail" name="regEmail" required>
+      
+              <label for="regPassword">Password:</label>
+              <input type="password" id="regPassword" name="regPassword" required>
+      
+              <label for="regAdmin">Admin:</label>
+              <input type="checkbox" id="regAdmin" name="regAdmin">
+            </fieldset>
+      
+            <button type="submit">Register</button>
+          </form>
+        </section>
+        <section>
+          <form id="updateForm">
+            <fieldset>
+              <legend>Update Information</legend>
+      
+              <label for="updUsername">Username:</label>
+              <input type="text" id="updUsername" name="updUsername" required>
+      
+              <label for="updEmail">Email:</label>
+              <input type="email" id="updEmail" name="updEmail" required>
+      
+              <label for="updPassword">Password:</label>
+              <input type="password" id="updPassword" name="updPassword" required>
+      
+              <label for="updAdmin">Admin:</label>
+              <input type="checkbox" id="updAdmin" name="updAdmin">
+            </fieldset>
+      
+            <button type="submit">Update</button>
+          </form>
+        </section>
+        <section>
+            <form id="deleteForm">
+                <fieldset>
+                <legend>Delete User</legend>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="delusername" name="delusername" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="delemail" name="delemail" required>
+                </fieldset>
+                
+                <button type="submit">Delete</button>
+            </form>
+        </section>
+    </div> -->
+      
+      
+      
+      
+      
+    <h1>Admin View of Users</h1>
+    <p>Note: You may have to click "Reload Grid" after doing CRUD actions to the table in order to update the values.</p>
+    <p><button class="logout" onclick="window.location.href = '../logout.html';">Logout</button></p>
+    <zing-grid
+        caption = "User Management"
+        editor-controls
+        pager
+        page-size="5"
+        theme="dark"
+        layout="row">
+        <zg-data src="./userauth.php">
+          <!-- <zg-param name="src" value="https://reporting.cse151group111.online/user"></zg-param> -->
+          <zg-param name="createOptions" value='{"src": "https://reporting.cse151group111.online/user/"}'></zg-param>
+          <zg-param name="updateOptions" value='{"row": {"src": "https://reporting.cse151group111.online/user/"}}'></zg-param>
+          <zg-param name="deleteOptions" value='{"src": "https://reporting.cse151group111.online/user/"}'></zg-param>
+        </zg-data>
+    </zing-grid>
+</body>
+</html>
