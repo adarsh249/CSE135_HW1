@@ -1,0 +1,3 @@
+DirectoryIndex login.html
+RewriteEngine On
+RewriteRule ^index\.html$ /dashboard.html [R=301,L]

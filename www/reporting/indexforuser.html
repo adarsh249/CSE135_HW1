@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE 135 HW Lives!</title>
+  <style>* { background-color: white; }</style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.cse151group111.online/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  <!-- <script src="redirect.js"></script> -->
+  <script src="middleware/auth.js"></script>
+
+</head>
+
+<body>
+  <h1>CSE 135 HW1 Lives!</h1>
+  <h2>reporting.cse151group111.online</h2>
+  <script>
+    document.write(`Live @ ${new Date()}`);
+  </script>
+  <h2>Welcome to the Main Page for HW4! (User Ver.)</h2>
+  <p>This is the main page content.</p>
+  <button onclick="logout()">Logout</button>
+  <script>
+    // Function to handle logout
+    function logout() {
+      // Remove the "token" item from local storage
+      localStorage.removeItem('token');
+
+      // Redirect to logout.html
+      window.location.href = 'logout.html';
+    }
+
+    // Add event listener to the logout button
+    var logoutButton = document.getElementById('logoutButton');
+    logoutButton.addEventListener('click', logout);
+  </script>
+  </body>
+  </html>
