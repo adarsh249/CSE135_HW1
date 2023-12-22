@@ -1,0 +1,26 @@
+body { 
+    background-color:#f1f1f1; 
+}
+
+footer { 
+    text-align: center; 
+}
+
+.langlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    
+}
+
+.langlist ul{
+    background-color: rgb(226, 226, 226);
+}
+
+#trackerImage {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
